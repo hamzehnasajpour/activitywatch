@@ -32,7 +32,7 @@ build:
 	if [ -e "aw-core/.git" ]; then \
 		echo "Submodules seem to already be initialized, continuing..."; \
 	else \
-		git submodule update --init --recursive; \
+#		git submodule update --init --recursive; \
 	fi
 #
 	make --directory=aw-core build DEV=$(DEV)
