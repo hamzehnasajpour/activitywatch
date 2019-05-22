@@ -29,11 +29,11 @@ SHELL := /usr/bin/env bash
 #    packages as user packages (same as `pip install --user <pkg>`). This makes
 #    it possible to install without using a virtualenv (or root).
 build:
-	if [ -e "aw-core/.git" ]; then \
-		echo "Submodules seem to already be initialized, continuing..."; \
-	else \
-#		git submodule update --init --recursive; \
-	fi
+	#if [ -e "aw-core/.git" ]; then \
+	#	echo "Submodules seem to already be initialized, continuing..."; \
+	#else \
+	#	git submodule update --init --recursive; \
+	#fi
 #
 	make --directory=aw-core build DEV=$(DEV)
 	make --directory=aw-client build DEV=$(DEV)
